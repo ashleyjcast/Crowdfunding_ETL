@@ -1,3 +1,5 @@
+-- Table Creation
+
 DROP TABLE IF EXISTS campaign;
 DROP TABLE IF EXISTS category;
 DROP TABLE IF EXISTS contacts;
@@ -38,3 +40,9 @@ CREATE TABLE campaign (
 	subcategory_id VARCHAR(10) REFERENCES subcategory (subcategory_id) NOT NULL
 	);
 
+-- Queries
+-- Run once after table creation and once after data is imported.
+SELECT * FROM campaign;
+SELECT * FROM category;
+SELECT * FROM contacts;
+SELECT * FROM subcategory;
